@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimun-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/prefixfree.min.js"> </script>
+
+
+    <title>Antojitos del Pueblo</title>
+  </head>
+
+  <script type="text/javascript">
+
+    function mostrarTacos(){
+  document.getElementById("despleTacos").style.display = "none";
+}
+
+function ocultarTacos(){
+  document.getElementById("despleTacos").style.display = "flex";
+}
+
+function mostrar_ocultarTacos(){
+  var caja = document.getElementById("despleTacos");
+
+  if (caja.style.display == "none"){
+    ocultarTacos();
+  } else{
+    mostrarTacos();
+  }
+
+}
+
+function mostrarQuesadillas(){
+  document.getElementById("despleQuesadillas").style.display = "none";
+}
+
+function ocultarQuesadillas(){
+  document.getElementById("despleQuesadillas").style.display = "flex";
+}
+
+function mostrar_ocultarQuesadillas(){
+  var caja = document.getElementById("despleQuesadillas");
+
+  if (caja.style.display == "none"){
+    ocultarQuesadillas();
+  } else{
+    mostrarQuesadillas();
+  }
+
+}
+
+function mostrarSopes(){
+  document.getElementById("despleSopes").style.display = "none";
+}
+
+function ocultarSopes(){
+  document.getElementById("despleSopes").style.display = "flex";
+}
+
+function mostrar_ocultarSopes(){
+  var caja = document.getElementById("despleSopes");
+
+  if (caja.style.display == "none"){
+    ocultarSopes();
+  } else{
+    mostrarSopes();
+  }
+
+}
+
+function mostrarPozole(){
+  document.getElementById("desplePozole").style.display = "none";
+}
+
+function ocultarPozole(){
+  document.getElementById("desplePozole").style.display = "flex";
+}
+
+function mostrar_ocultarPozole(){
+  var caja = document.getElementById("desplePozole");
+
+  if (caja.style.display == "none"){
+    ocultarPozole();
+  } else{
+    mostrarPozole();
+  }
+
+}
+
+  </script>
+  <body>
+
+<header>
+  <div class="contenedor">
+    <div class="logo">
+
+    </div>
+    <nav class="menu">
+      <a href="#">Comida</a>
+      <a href="html/Bebidas.html">Bebidas</a>
+      <a href="html/postres.html">Postres</a>
+    </nav>
+
+  </div>
+</header>
+
+<div class="logo">
+  <img src="img/logo.png" alt="logo">
+</div>
+
+<section class="menuTacos">
+  <div class="tacos">
+    <div class="titulo">
+    <h2 onclick="mostrar_ocultarTacos()">Tacos</h2>
+      <img src="img/10.svg" class="precio">
+  </div>
+    <div id=despleTacos class="sabores">
+      <div id="item">Pastor</div>
+      <div id="item">Bistek</div>
+      <div id="item">Chorizo</div>
+      <div id="item">Tripa</div>
+    </div>
+  </div>
+</section>
+
+<section class="menuQuesadillas">
+  <div class="quesadillas">
+    <div class="titulo">
+    <h2 onclick="mostrar_ocultarQuesadillas()">Quesadillas</h2>
+      <img src="img/15.svg" class="precio">
+  </div>
+    <div id=despleQuesadillas class="sabores">
+      <div id="item">Queso</div>
+      <div id="item">Tinga</div>
+      <div id="item">Mole</div>
+      <div id="item">Desebrada</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="menuSopes">
+  <div class="sopes">
+    <div class="titulo">
+    <h2 onclick="mostrar_ocultarSopes()">Sopes</h2>
+      <img src="img/20.svg" class="precio">
+  </div>
+    <div id=despleSopes class="sabores">
+      <div id="item">Chorizo</div>
+      <div id="item">Frijol</div>
+      <div id="item">Chicharron</div>
+      <div id="item">Cochinita</div>
+    </div>
+  </div>
+</section>
+
+<section class="menuPozole">
+  <div class="pozole">
+    <div class="titulo">
+    <h2 onclick="mostrar_ocultarPozole()">Pozole</h2>
+      <img src="img/20.svg" class="precio">
+  </div>
+    <div id=desplePozole class="sabores">
+      <div id="item">Verde</div>
+      <div id="item">Rojo</div>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+
+  <div class="top-footer">
+    <h3>Para servirle</h3>
+  </div>
+  <div class="center-footer">
+    <div class="contenedor">
+      <div class="widget">
+        <h4>Direccion</h4>
+        <p>Calle Victor Rosales, Colonia los Fresnos #25. Codigo Postal 61830</p>
+      </div>
+      <div class="widget">
+        <h4>Contacto</h4>
+        <p>Numero: 425118158  sabordelpueblo@gmail.com</p>
+      </div>
+      <div class="widget">
+        <h4>Horario</h4>
+        <p>Lunes a Viernes: <br> 08:00 pm - 11:00 pm <br> Sabados y Domingos: <br> 07:00pm - 02:00am</p>
+      </div>
+
+      <div class="widget">
+        <h4>Servicio a domicilio</h4>
+       <img src="img/aDomicilio.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="botton-footer">
+    <p> &copy; Todos los derechos reservados</p>
+  </div>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,322 @@
+@font-face{
+    font-family: "roboto";
+    src: url(../tipografia/roboto.ttf);
+  
+  }
+  
+  .menu a{
+    font-family: "roboto";
+    font-size: 100px;
+  }
+  
+  p{
+    font-family: "roboto";
+  }
+  
+  h4{
+  font-family: "roboto";
+  }
+  
+  h2:hover{
+    color: rgba(255, 10, 84, 1);
+  }
+  
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    transition: color 0.2s linear 0.2s;
+  }
+  
+  h2{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .titulo img{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .contenedor{
+    margin: 0;
+    padding:  20px 0;
+    text-align: center;
+      background-color: #f9adb0;
+  }
+  
+  .menu a{
+  
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin: 20px;
+  
+  }
+  
+  .logo img{
+      width:300px;
+      margin: auto;
+       display: block;
+  }
+  
+  .menuSodas{
+    width: 60%;
+    height: 300px;
+  
+    background-image: url(../img/bebidas/refresco\ original.jpg);
+    background-position: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: -8px 8px 1px #f9adb0;
+     margin-bottom: 15px;
+  }
+  
+  .sodas{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    padding: 10px 0;
+    background-color: rgba(249, 173, 176, .6);
+    box-sizing: border-box;
+  
+  }
+  
+  h2{
+    text-align: center;
+    flex-direction: row;
+  }
+  
+  #item {
+    font-size: 25px;
+    font-family: "roboto";
+  }
+  
+  .sabores{
+    display: none;
+    
+    flex-direction: row; /* Ordena las cajas por filas*/
+    flex-wrap: wrap; /* Cuando no quepan las filas las manda hacia abajo*/
+    justify-content: center; /* Centra las filas*/
+    
+    
+  }
+  
+  .titulo{
+    display: flex;
+    flex-direction: row; /* Ordena las cajas por filas*/
+    flex-wrap: wrap; /* Cuando no quepan las filas las manda hacia abajo*/
+    justify-content: center; /* Centra las filas*/
+    align-items: center;
+   
+  }
+  
+  .precio{
+    width: 20%;
+  }
+  
+  #item{
+    
+    background-color: rgba(255, 10, 84, 1);
+    color: aliceblue;
+    padding: 10px 15px;
+  }
+  
+  .menuMalteadas{
+    width: 60%;
+    height: 300px;
+  
+    background-image: url(../img/bebidas/malteadas\ original.jpg);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: -8px 8px 1px #f9adb0;
+     margin-bottom: 15px;
+  }
+  
+  .malteadas{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    padding: 10px 0;
+    background-color: rgba(249, 173, 176, .6);
+    box-sizing: border-box;
+  
+  }
+  
+  .menuCerveza{
+    width: 60%;
+    height: 300px;
+  
+    background-image: url(../img/bebidas/cerveza\ original.jpg);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: -8px 8px 1px #f9adb0;
+     margin-bottom: 15px;
+  }
+  
+  
+  .cerveza{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    padding: 10px 0;
+    background-color: rgba(249, 173, 176, .6);
+    box-sizing: border-box;
+  
+  }
+  
+  .menuJugos{
+    width: 60%;
+    height: 300px;
+  
+    background-image: url(../img/bebidas/jugos\ original.jpg);
+    background-position: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    position: relative;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: -8px 8px 1px #f9adb0;
+     margin-bottom: 15px;
+  }
+  
+  
+  .jugos{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    width: 70%;
+    padding: 10px 0;
+    background-color: rgba(249, 173, 176, .6);
+    box-sizing: border-box;
+  
+  }
+  
+  /*BREAKPOINTS */
+  
+  @media only screen and (max-width: 923px) {
+  .menuTacos{
+    height: 400px; 
+  }
+  
+  #item{
+    border-radius: 5px;
+  }
+  
+  img{
+    width: 30%;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 454px) {
+    .menuSodas{
+      height: 470px;
+    }
+  
+    #item{
+      border-radius: 5px;
+    }
+  
+    .precio{
+      width: 15%;
+    }
+  
+    h2{
+      font-size: 30px;
+      margin:  5px 5px;
+    }
+  
+    .titulo img{
+      width: 50%;
+    }
+  } 
+  
+   /*Pie de pagina*/
+  
+   h4{
+     margin: 10px;
+   }
+  
+   p{
+     margin: 10px;
+   }
+  
+   footer{
+    background-color: #ff85a1;
+  }
+  
+  .top-footer{
+    background-color: #ff85a1;
+    height: 50px;
+    color: white;
+    font-family: "roboto";
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .center-footer{
+    margin-bottom: 0;
+  }
+  
+  .center-footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .center-footer .widget{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+    max-width: 280px;
+  }
+  
+  .center-footer .widget h4{
+    padding-bottom: 5px;
+    font-size: 22px;
+  }
+  
+  .center-footer .widget p{
+    font-size: 17px;
+  }
+  
+  .botton-footer{
+      background-color: #ff85a1;
+      height: 25px;
+  }
+  
+  .botton-footer p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .widget img{
+    width: 70%;
+  }

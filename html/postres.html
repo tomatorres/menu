@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimun-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/postres.css">
+    <script type="text/javascript" src="../js/prefixfree.min.js"> </script>
+
+    <title>Sabor del Pueblo</title>
+  </head>
+  <script type="text/javascript">
+
+    function mostrarCakes(){
+  document.getElementById("despleCakes").style.display = "none";
+}
+
+function ocultarCakes(){
+  document.getElementById("despleCakes").style.display = "flex";
+}
+
+function mostrar_ocultarCakes(){
+  var caja = document.getElementById("despleCakes");
+
+  if (caja.style.display == "none"){
+    ocultarCakes();
+  } else{
+    mostrarCakes();
+  }
+
+}
+
+function mostrarFlan(){
+  document.getElementById("despleFlan").style.display = "none";
+}
+
+function ocultarFlan(){
+  document.getElementById("despleFlan").style.display = "flex";
+}
+
+function mostrar_ocultarFlan(){
+  var caja = document.getElementById("despleFlan");
+
+  if (caja.style.display == "none"){
+    ocultarFlan();
+  } else{
+    mostrarFlan();
+  }
+
+}
+
+function mostrarGalletas(){
+  document.getElementById("despleGalletas").style.display = "none";
+}
+
+function ocultarGalletas(){
+  document.getElementById("despleGalletas").style.display = "flex";
+}
+
+function mostrar_ocultarGalletas(){
+  var caja = document.getElementById("despleGalletas");
+
+  if (caja.style.display == "none"){
+    ocultarGalletas();
+  } else{
+    mostrarGalletas();
+  }
+
+}
+
+
+
+  </script>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div class="logo">
+    
+        </div>
+        <nav class="menu">
+          <a href="../index.html">Comida</a>
+          <a href="../html/Bebidas.html">Bebidas</a>
+          <a href="../html/postres.html">Postres</a>
+        </nav>
+    
+      </div>
+    </header>
+
+    <div class="logo">
+      <img src="../img/logo.png" alt="logo">
+    </div>
+    
+    <section class="menuCakes">
+      <div class="cakes">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarCakes()">CupCakes</h2>
+          <img src="../img/10.svg" class="precio">
+      </div>
+        <div id=despleCakes class="sabores">
+          <div id="item">Arandano</div>
+          <div id="item">Chocolate</div>
+          <div id="item">Queso</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="menuFlan">
+      <div class="flan">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarFlan()">Flan</h2>
+          <img src="../img/15.svg" class="precio">
+      </div>
+        <div id=despleFlan class="sabores">
+          <div id="item">Piña Colada</div>
+          <div id="item">Caramelo</div>
+          <div id="item">Vainilla</div>
+          <div id="item">Turron</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="menuGalletas">
+      <div class="galletas">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarGalletas()">Galletas</h2>
+          <img src="../img/20.svg" class="precio">
+      </div>
+        <div id=despleGalletas class="sabores">
+          <div id="item">Chocolate</div>
+          <div id="item">Cacao</div>
+          <div id="item">Jengibre</div>
+          <div id="item">Nuez</div>
+          <div id="item">Avena</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer>
+    
+      <div class="top-footer">
+        <h3>Para servirle</h3>
+      </div>
+      <div class="center-footer">
+        <div class="contenedor">
+          <div class="widget">
+            <h4>Direccion</h4>
+            <p>Calle Victor Rosales, Colonia los Fresnos #25. Codigo Postal 61830</p>
+          </div>
+          <div class="widget">
+            <h4>Contacto</h4>
+            <p>Numero: 425118158  sabordelpueblo@gmail.com</p>
+          </div>
+          <div class="widget">
+            <h4>Horario</h4>
+            <p>Lunes a Viernes: <br> 08:00 pm - 11:00 pm <br> Sabados y Domingos: <br> 07:00pm - 02:00am</p>
+          </div>
+    
+          <div class="widget">
+            <h4>Servicio a domicilio</h4>
+           <img src="../img/aDomicilio.png" alt="">
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="botton-footer">
+        <p> &copy; Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

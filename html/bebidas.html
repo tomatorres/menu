@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimun-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bebidas.css">
+    <script type="text/javascript" src="../js/prefixfree.min.js"> </script>
+
+    <title>Sabor del Pueblo</title>
+  </head>
+  <script type="text/javascript">
+
+    function mostrarSodas(){
+  document.getElementById("despleSodas").style.display = "none";
+}
+
+function ocultarSodas(){
+  document.getElementById("despleSodas").style.display = "flex";
+}
+
+function mostrar_ocultarSodas(){
+  var caja = document.getElementById("despleSodas");
+
+  if (caja.style.display == "none"){
+    ocultarSodas();
+  } else{
+    mostrarSodas();
+  }
+
+}
+
+function mostrarMalteadas(){
+  document.getElementById("despleMalteadas").style.display = "none";
+}
+
+function ocultarMalteadas(){
+  document.getElementById("despleMalteadas").style.display = "flex";
+}
+
+function mostrar_ocultarMalteadas(){
+  var caja = document.getElementById("despleMalteadas");
+
+  if (caja.style.display == "none"){
+    ocultarMalteadas();
+  } else{
+    mostrarMalteadas();
+  }
+
+}
+
+function mostrarCerveza(){
+  document.getElementById("despleCerveza").style.display = "none";
+}
+
+function ocultarCerveza(){
+  document.getElementById("despleCerveza").style.display = "flex";
+}
+
+function mostrar_ocultarCerveza(){
+  var caja = document.getElementById("despleCerveza");
+
+  if (caja.style.display == "none"){
+    ocultarCerveza();
+  } else{
+    mostrarCerveza();
+  }
+
+}
+
+function mostrarJugos(){
+  document.getElementById("despleJugos").style.display = "none";
+}
+
+function ocultarJugos(){
+  document.getElementById("despleJugos").style.display = "flex";
+}
+
+function mostrar_ocultarJugos(){
+  var caja = document.getElementById("despleJugos");
+
+  if (caja.style.display == "none"){
+    ocultarJugos();
+  } else{
+    mostrarJugos();
+  }
+
+}
+
+  </script>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div class="logo">
+    
+        </div>
+        <nav class="menu">
+          <a href="../index.html">Comida</a>
+          <a href="../html/Bebidas.html">Bebidas</a>
+          <a href="../html/postres.html">Postres</a>
+        </nav>
+    
+      </div>
+    </header>
+
+    <div class="logo">
+      <img src="../img/logo.png" alt="logo">
+    </div>
+    
+    <section class="menuSodas">
+      <div class="sodas">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarSodas()">Refrescos</h2>
+          <img src="../img/15.svg" class="precio">
+      </div>
+        <div id=despleSodas class="sabores">
+          <div id="item">Coca-Cola</div>
+          <div id="item">Squirt</div>
+          <div id="item">Fanta</div>
+          <div id="item">Sidral</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="menuMalteadas">
+      <div class="malteadas">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarMalteadas()">Malteadas</h2>
+          <img src="../img/20.svg" class="precio">
+      </div>
+        <div id=despleMalteadas class="sabores">
+          <div id="item">Fresa</div>
+          <div id="item">Chocolate</div>
+          <div id="item">Galleta</div>
+          <div id="item">Napolitano</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="menuCerveza">
+      <div class="cerveza">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarCerveza()">Cerveza</h2>
+          <img src="../img/20.svg" class="precio">
+      </div>
+        <div id=despleCerveza class="sabores">
+          <div id="item">Tecate</div>
+          <div id="item">Carta Blanca</div>
+          <div id="item">Victoria</div>
+          <div id="item">Corona</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="menuJugos">
+      <div class="jugos">
+        <div class="titulo">
+        <h2 onclick="mostrar_ocultarJugos()">Jugos</h2>
+          <img src="../img/20.svg" class="precio">
+      </div>
+        <div id=despleJugos class="sabores">
+          <div id="item">Zanahoria</div>
+          <div id="item">Naranja</div>
+          <div id="item">Betabel</div>
+          <div id="item">Apio</div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+    
+      <div class="top-footer">
+        <h3>Para servirle</h3>
+      </div>
+      <div class="center-footer">
+        <div class="contenedor">
+          <div class="widget">
+            <h4>Direccion</h4>
+            <p>Calle Victor Rosales, Colonia los Fresnos #25. Codigo Postal 61830</p>
+          </div>
+          <div class="widget">
+            <h4>Contacto</h4>
+            <p>Numero: 425118158  sabordelpueblo@gmail.com</p>
+          </div>
+          <div class="widget">
+            <h4>Horario</h4>
+            <p>Lunes a Viernes: <br> 08:00 pm - 11:00 pm <br> Sabados y Domingos: <br> 07:00pm - 02:00am</p>
+          </div>
+    
+          <div class="widget">
+            <h4>Servicio a domicilio</h4>
+           <img src="../img/aDomicilio.png" alt="">
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="botton-footer">
+        <p> &copy; Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
